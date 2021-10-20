@@ -16,7 +16,10 @@ hr {
   display: flex;
 }
 
-.navbar p {
+.navbar a {
+  text-decoration: none;
+  color: #d7c9aa;
+  font-weight: bold;
   padding-right: 25px;
   padding-left: 25px;
 }
