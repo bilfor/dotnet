@@ -3,20 +3,17 @@ html {
   color: #d7c9aa;
 }
 
-hr {
-  border-color: #d7c9aa;
-}
-
 .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .navbar {
   display: flex;
 }
 
-.navbar a {
+a {
   text-decoration: none;
   color: #d7c9aa;
   font-weight: bold;
@@ -25,10 +22,16 @@ hr {
 }
 
 .box {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   background-color: #7b2d26;
   width: 60%;
   padding: 10px;
   border-radius: 10px;
+  align-items: center;
+}
+
+.box a {
+  padding: 10px;
 }
