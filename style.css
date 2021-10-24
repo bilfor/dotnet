@@ -35,3 +35,14 @@ a {
 .box a {
   padding: 10px;
 }
+
+.box img {
+  width: 60%;
+  padding: 10px;
+}
+
+.album-info {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
