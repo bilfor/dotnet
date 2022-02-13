@@ -4,9 +4,11 @@ const gameResult = document.createElement('p');
 const winnerMessage = document.createElement('p');
 const playerTallyMessage = document.createElement('p');
 const computerTallyMessage = document.createElement('p');
+const playAgainMessage = document.createElement('p');
 const btn1 = document.querySelector('#gb1');
 const btn2 = document.querySelector('#gb2');
 const btn3 = document.querySelector('#gb3');
+const title = document.querySelector('#title');
 
 let playerTally = 0;
 let computerTally = 0;
@@ -73,7 +75,7 @@ function clearNodes() {
 function printOut(pplay, cplay, result) {
   playerReport.textContent = "You played " + pplay.toUpperCase();
   computerReport.textContent = "Robot played " + cplay.toUpperCase();
-  gameResult.textContent = result;
+  gameResult.textContent = result.toUpperCase();
   results.appendChild(playerReport); 
   results.appendChild(computerReport);
   results.appendChild(gameResult);
@@ -82,6 +84,7 @@ function printOut(pplay, cplay, result) {
   computerTallyMessage.textContent = "ROBOT: " + computerTally;
   score.appendChild(playerTallyMessage); 
   score.appendChild(computerTallyMessage);
+
 
   if(playerTally == 5) {
     winnerMessage.textContent = 'GAME OVER! YOU WIN!';
@@ -96,6 +99,11 @@ function printOut(pplay, cplay, result) {
     playerTally = 0;
     computerTally = 0;
   }
+
+  //playAgainMessage.textContent = "Press any play button to start a new round.";
+  //title.appendChild(playAgainMessage);
+  
+
 }
 
 btn1.addEventListener('click', function (e) {
