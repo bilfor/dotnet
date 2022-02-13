@@ -71,20 +71,20 @@ function clearNodes() {
 }
 
 function printOut(pplay, cplay, result) {
-  playerReport.textContent = "you played " + pplay;
-  computerReport.textContent = "robot played " + cplay;
+  playerReport.textContent = "You played " + pplay.toUpperCase();
+  computerReport.textContent = "Robot played " + cplay.toUpperCase();
   gameResult.textContent = result;
   results.appendChild(playerReport); 
   results.appendChild(computerReport);
   results.appendChild(gameResult);
 
-  playerTallyMessage.textContent = playerTally;
-  computerTallyMessage.textContent = computerTally;
+  playerTallyMessage.textContent = "YOU: " + playerTally;
+  computerTallyMessage.textContent = "ROBOT: " + computerTally;
   score.appendChild(playerTallyMessage); 
   score.appendChild(computerTallyMessage);
 
   if(playerTally == 5) {
-    winnerMessage.textContent = 'GAME OVER! YOU WINS!';
+    winnerMessage.textContent = 'GAME OVER! YOU WIN!';
     winner.appendChild(winnerMessage);
     playerTally = 0;
     computerTally = 0;
