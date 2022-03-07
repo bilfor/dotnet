@@ -9,6 +9,10 @@ html {
   align-items: center;
 }
 
+h2 {
+  color: #466362;
+}
+
 .navbar {
   display: flex;
 }
@@ -32,9 +36,29 @@ a {
   align-items: center;
 }
 
+.notes-box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #7b2d26;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
+}
+
 .box a {
   padding: 10px;
 }
+.notes-box a {
+  padding: 10px;
 
 .box img {
   width: 40%;
