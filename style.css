@@ -46,19 +46,17 @@ a {
   border-radius: 10px;
 }
 
-.align-left {
+.notes-box a {
   float: left;
 }
 
-.align-right {
+.notes-box p {
   float: right;
 }
 
 .box a {
   padding: 10px;
 }
-.notes-box a {
-  padding: 10px;
 
 .box img {
   width: 40%;
