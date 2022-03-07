@@ -1,6 +1,10 @@
 html {
-  background-color: #466362;
-  color: #d7c9aa;
+  background-color: #2b3a67;
+  color: #452103;
+}
+
+h1 {
+  color: #fffd82;
 }
 
 .container {
@@ -15,7 +19,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #d7c9aa;
+  color: #fffd82;
   font-weight: bold;
   padding-right: 25px;
   padding-left: 25px;
@@ -25,7 +29,7 @@ a {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  background-color: #7b2d26;
+  background-color: #fffd82;
   width: 60%;
   padding: 10px;
   border-radius: 10px;
@@ -36,7 +40,7 @@ a {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  background-color: #7b2d26;
+  background-color: #fffd82;
   width: 60%;
   padding: 10px;
   border-radius: 10px;
@@ -52,6 +56,11 @@ a {
 
 .box a {
   padding: 10px;
+  color: #452103;
+}
+
+.box h1 {
+  color: #452103;
 }
 
 .box img {
@@ -69,7 +78,7 @@ a {
   margin-top: 20px;
   display: flex;
   flex-direction:column;
-  background-color: #7b2d26;
+  background-color: #fffd82;
   width: 60%;
   padding: 10px;
   border-radius: 10px;
