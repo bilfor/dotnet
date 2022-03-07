@@ -9,10 +9,6 @@ html {
   align-items: center;
 }
 
-h2 {
-  color: #466362;
-}
-
 .navbar {
   display: flex;
 }
