@@ -101,6 +101,7 @@ a {
 
 @media (max-width: 1000px) {
   .box {
+    all: unset;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -111,8 +112,4 @@ a {
     border-radius: 10px;
     align-items: center;
   } 
-  
-  html {
-    background-color: pink;
-  }
 }
