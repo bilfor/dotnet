@@ -1,11 +1,15 @@
 html {
   background-color: #2b3a67;
   color: #452103;
+  font-family: georgia, serif;
+  
 }
 
 h1 {
   color: #fffd82;
 }
+
+.centered-and-cropped { object-fit: cover }
 
 .container {
   display: flex;
