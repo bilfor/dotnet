@@ -2,7 +2,6 @@ html {
   background-color: #2b3a67;
   color: #452103;
   font-family: georgia, serif;
-  
 }
 
 h1 {
@@ -35,6 +34,7 @@ a {
   flex-direction: column;
   background-color: #fffd82;
   width: 60%;
+  max-width: 560px;
   padding: 10px;
   border-radius: 10px;
   align-items: center;
@@ -84,6 +84,7 @@ a {
   flex-direction:column;
   background-color: #fffd82;
   width: 60%;
+  max-width: 560px;
   padding: 10px;
   border-radius: 10px;
   align-items: center;
