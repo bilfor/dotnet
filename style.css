@@ -8,6 +8,10 @@ h1 {
   color: #fffd82;
 }
 
+.enwiden {
+  all:unset;
+}
+
 .centered-and-cropped { object-fit: cover }
 
 .container {
@@ -94,3 +98,16 @@ a {
   width: 90%;
   padding: 10px;
 }
+
+@media (max-width: 1000px) {
+  .box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fffd82;
+    width: 90%;
+    /*max-width: 560px;*/
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+} 
