@@ -1,8 +1,20 @@
+html {
+background-color: #CD7F32;
+}
+
 #container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+} 
+
+#drawspace {
   display: flex;
   flex-wrap: wrap;
   width: 500px;
   height: 500px;
+  border: 4px solid black; 
 }
 
 .box:before {

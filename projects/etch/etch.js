@@ -1,16 +1,15 @@
-const container = document.querySelector('#container'); 
+const drawspace = document.querySelector('#drawspace'); 
 
 function createBox(i, dim) {
   const box = document.createElement('div');
   box.textContent = " ";
-  box.style = "color: blue; background-color: blue; flex: 1 0 " + dim + "%; height: " + dim + "%"; 
+  box.style = "background-color: #FFFDD0; flex: 1 0 " + dim + "%; height: " + dim + "%;"; 
   box.setAttribute("class", "box"); 
   box.setAttribute("id", "box" + i);
-  container.appendChild(box);
+  drawspace.appendChild(box);
   
   box.addEventListener("mouseenter", function(event) {
-    event.target.style.backgroundColor = "yellow";
-    event.target.style.color = "yellow";
+    event.target.style.backgroundColor = "#4B4E53";
   })
 }
 
@@ -32,7 +31,7 @@ function reset() {
   while(size > 100) {
     size = prompt("New size? (ex: '3' -> new 3x3 grid) MAX = 100");
   }
-  noChildren(container);
+  noChildren(drawspace);
   createGrid(size*size);
 }
 
