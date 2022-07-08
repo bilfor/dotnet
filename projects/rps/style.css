@@ -1,27 +1,24 @@
 body {
-  background-color: darkblue;
+  background-color: white;
   width: 700px;
   margin: auto;
 }
 
 h1 {
-  color: darkorange;
+  color: black;
 }
 
 button {
   width: 100px;
-  height: 100px;
-  background-color: blue;
-  color: white;
-  border-color: orange;
+  height: 50px;
+  border-radius: 15px;
+  justify-content: center;
 }
 
 p {
-  color: white;
 }
 
 h3 {
-  color: darkorange;
 }
 
 #results {
@@ -53,5 +50,6 @@ h3 {
 .button-container {
   display: flex;
   justify-content: space-around;
-  height: 200px;
+  height: 150px;
+
 }
