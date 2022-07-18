@@ -14,7 +14,6 @@ h1 {
   all:unset;
 }
 
-
 .centered-and-cropped { object-fit: cover }
 
 .container {
@@ -137,3 +136,4 @@ p {
         
 #potm {
 }
+
