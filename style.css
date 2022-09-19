@@ -1,6 +1,6 @@
 html {
   --bgc: #FFFFFF;
-  --tc: #00008B;
+  --tc: #000000;
   background-color: var(--bgc);
   color: var(--tc);
   font-family: "Times New Roman";
