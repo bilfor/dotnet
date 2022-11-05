@@ -1,136 +1,25 @@
 html {
-  --bgc: #FFFFFF;
-  --tc: #000000;
+  --bgc: #000000;
+  --tc:  #FFFFFF;
   background-color: var(--bgc);
   color: var(--tc);
-  font-family: "Times New Roman";
-}
-
-h1 {
-  color: var(--tc);
-}
-
-.enwiden {
-  all:unset;
-}
-
-.centered-and-cropped { object-fit: cover }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.navbar {
-  display: flex;
+  font-family: Arial;
 }
 
 a {
-  text-decoration: none;
-  color: var(--tc);
-  font-weight: bold;
-  padding-right: 25px;
-  padding-left: 25px;
+  color: #FFFFFF;
 }
 
-.box {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--bgc);
-  border-color: var(--tc);
-  border-style: solid;
-  border-width: 2px;
-  width: 60%;
-  max-width: 560px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  border-radius: 5px;
-  align-items: center;
+img {
+  height: 300px;
 }
 
-.notes-box {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--bgc);
-  width: 60%;
-  padding: 10px;
-  border-radius: 10px;
+.photodiv img {
+  aspect-ratio: auto;
 }
 
-.notes-box a {
-  float: left;
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
 }
-
-.notes-box p {
-  float: right;
-}
-
-.box a {
-  padding: 10px;
-}
-
-.box h1 {
-  color: #000000;
-}
-
-.box img {
-  width: 90%;
-  padding: 10px;
-}
-
-#wet-pet {
-  width: 40%;
-  padding: 10px;
-}
-
-.album-info {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-
-.photo-box {
-  margin-top: 20px;
-  display: flex;
-  flex-direction:column;
-  background-color: #fffd82;
-  width: 60%;
-  max-width: 560px;
-  padding: 10px;
-  border-radius: 10px;
-  align-items: center;
-}
-
-.photo-box img {
-  width: 90%;
-  padding: 10px;
-}
-
-@media (max-width: 800px) {
-  html {
-    font-size: 28px;
-  } 
-
-  .box {
-    all: unset;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    background-color: #fffd82;
-    width: 80%;
-    /*max-width: 560px;*/
-    padding: 10px;
-    border-radius: 10px;
-    align-items: center;
-  } 
-}
-
-p {
-  color: var(--tc);
- } 
-
