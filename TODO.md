@@ -1,7 +1,0 @@
-- allow saving and posting of etch a sketch drawings
-- etch a sketch button change, maybe make it a field
-- expand photos on click
-- add new photos
-- rps css
-- welcome photo archive
-- movie log
