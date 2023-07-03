@@ -1,9 +1,10 @@
 html {
-  --bgc: #000000;
-  --tc:  #FFFFFF;
+  --bgc: #086788;
+  --tc:  #F0C808;
   background-color: var(--bgc);
   color: var(--tc);
   font-family: Arial;
+  text-align: center;
 }
 
 a {
