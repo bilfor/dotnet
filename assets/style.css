@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: var(--lc);;
+  color: var(--lc);
 }
 
 img {
@@ -52,5 +52,6 @@ ul {
 	body {
 		width: 100%;
 		position: absolute;
+		background-color: red;
 }
 }
