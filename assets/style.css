@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
 html {
-  --bgc: #086788;
-  --tc:  #F0C808;
+  --bgc: #B9BAA3;
+  --tc:  #0A100D;
+  --lc:  #BA2D0B;
   background-color: var(--bgc);
   color: var(--tc);
-  font-family: Arial;
+  font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", sans-serif;
   text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+body {
+  width: 25em;
+  display: inline-block;
+  text-align: left;
 }
 
 a {
-  color: #FFF1D0;
+  color: var(--lc);;
 }
 
 img {
