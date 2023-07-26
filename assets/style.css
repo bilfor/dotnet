@@ -48,7 +48,7 @@ ul {
 	width: 88px;
 }
 
-@media only screen and (hover: none) and (pointer: coarse) {
+@media (max-width:801px) {
 	body {
 		width: 100%;
 		position: absolute;
