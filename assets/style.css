@@ -47,3 +47,8 @@ ul {
 	height: 31px;
 	width: 88px;
 }
+
+@media only screen and (hover: none) and (pointer: coarse) {
+	body {
+		width: 100%;
+}
