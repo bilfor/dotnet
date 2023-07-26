@@ -51,4 +51,5 @@ ul {
 @media only screen and (hover: none) and (pointer: coarse) {
 	body {
 		width: 100%;
+		position: absolute;
 }
