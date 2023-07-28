@@ -9,11 +9,9 @@ html {
   font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", sans-serif;
   text-align: center;
   font-size: 1.2em;
-  font-weight: bold;
 }
 
-body {
-  width: 25em;
+.container {
   display: inline-block;
   text-align: left;
 }
