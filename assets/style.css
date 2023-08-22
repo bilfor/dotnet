@@ -1,23 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
-
 html {
-  --bgc: #B9BAA3;
-  --tc:  #0A100D;
-  --lc:  #BA2D0B;
+  --bgc: #000000;
+  --tc:  #FFFFFF;
+  --lc:  #818CF8;
   background-color: var(--bgc);
   color: var(--tc);
-  font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", sans-serif;
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe
+UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI
+Emoji,Segoe UI Symbol,Noto Color Emoji;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .container {
-  display: inline-block;
-  text-align: left;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 a {
   color: var(--lc);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 img {
@@ -34,21 +44,18 @@ ul {
   margin: 0; /* Remove margins */
 }
 
-.recipe-ul {
-  list-style-type: square;
-  padding-left: 2.5em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+.navbar {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+  word-spacing: 0.5rem;
+}
+
+.navbar a {
+  color: var(--tc);
 }
 
 .pin {
 	height: 31px;
 	width: 88px;
 }
-/*
-@media (max-width:801px) {
-	body {
-		width: 100%;
-}
-}
-*/
