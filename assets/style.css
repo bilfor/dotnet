@@ -38,6 +38,10 @@ img {
   aspect-ratio: auto;
 }
 
+.photospacer {
+  margin-top: 10rem;
+}
+
 ul {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
