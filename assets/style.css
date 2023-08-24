@@ -15,6 +15,19 @@ Emoji,Segoe UI Symbol,Noto Color Emoji;
   text-align: center;
 }
 
+/*
+.shrinkwrap {
+  display: inline-block;
+}
+*/
+
+.shrinkwrap img {
+  height: auto; 
+  width: auto;
+  max-height: 60vh;
+  max-width: 100%;
+}
+
 h1 {
   font-weight: 700;
   font-size: 2.25rem;
