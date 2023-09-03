@@ -1,25 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 html {
   --bgc: #000000;
   --tc:  #FFFFFF;
   --lc:  #818CF8;
+  --lh: #BF5700;
+  --eg: #004c54;
+  --bo: #fb4f14;
   background-color: var(--bgc);
   color: var(--tc);
-  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe
+  font-family: 'Nunito', sans-serif;
+  /*font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe
 UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI
-Emoji,Segoe UI Symbol,Noto Color Emoji;
+Emoji,Segoe UI Symbol,Noto Color Emoji;*/
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
+}
+
+table {
+  margin: auto;
+  max-width: 80vh;
+}
+
+td, th {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--lh);
+}
+
+tr:nth-child(odd) {
+  background-color: var(--eg);
 }
 
 .container {
   text-align: center;
 }
-
-/*
-.shrinkwrap {
-  display: inline-block;
-}
-*/
 
 .shrinkwrap img {
   height: auto; 
