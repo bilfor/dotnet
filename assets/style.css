@@ -94,3 +94,7 @@ ul {
 	height: 31px;
 	width: 88px;
 }
+
+.album-info {
+  word-spacing: 2rem;
+}
