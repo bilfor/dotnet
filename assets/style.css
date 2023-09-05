@@ -17,6 +17,12 @@ Emoji,Segoe UI Symbol,Noto Color Emoji;*/
   font-size: 1.2em;
 }
 
+.whisper {
+  color: darkgray;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
 table {
   margin: auto;
   max-width: 80vh;
