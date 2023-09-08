@@ -69,9 +69,13 @@ img {
   height: 300px;
 }
 
+.photodiv {
+  max-width: 80%;
+  margin: auto;
+}
+
 .photodiv img {
   aspect-ratio: auto;
-  max-width: 80%;
 }
 
 .photospacer {
