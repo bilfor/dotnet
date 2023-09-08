@@ -2,17 +2,14 @@
 
 html {
   --bgc: #000000;
-  --tc:  #FFFFFF;
-  --lc:  #818CF8;
+  --tc: #FFFFFF;
+  --lc: #818CF8;
   --lh: #BF5700;
   --eg: #004c54;
   --bo: #fb4f14;
   background-color: var(--bgc);
   color: var(--tc);
   font-family: 'Nunito', sans-serif;
-  /*font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe
-UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI
-Emoji,Segoe UI Symbol,Noto Color Emoji;*/
   text-align: center;
   font-size: 1.2em;
 }
@@ -25,6 +22,7 @@ Emoji,Segoe UI Symbol,Noto Color Emoji;*/
 
 table {
   margin: auto;
+  width: 80vh;
   max-width: 80vh;
 }
 
@@ -73,6 +71,7 @@ img {
 
 .photodiv img {
   aspect-ratio: auto;
+  max-width: 80%;
 }
 
 .photospacer {
