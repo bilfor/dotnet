@@ -21,6 +21,7 @@ html {
 }
 
 table {
+  table-layout: fixed;
   margin: auto;
   width: 80vh;
   max-width: 80vh;
