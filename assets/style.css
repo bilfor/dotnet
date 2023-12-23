@@ -10,7 +10,7 @@ html {
   background-color: var(--bgc);
   color: var(--tc);
   font-family: 'Nunito', sans-serif;
-  text-align: center;
+  text-align-last: center;
   font-size: 3vw;
 }
 
@@ -46,7 +46,7 @@ tr:nth-child(odd) {
 }
 
 .container {
-  text-align: center;
+  text-align-last: center;
 }
 
 .shrinkwrap img {
