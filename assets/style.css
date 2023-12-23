@@ -23,7 +23,7 @@ html {
 table {
   margin: auto;
   width: 80vh;
-  max-width: 100%;
+  max-width: 99%;
 }
 
 td, th {
@@ -95,8 +95,8 @@ ul {
 }
 
 .navbar {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 5vw;
+  line-height: 2.75rem;
   margin-bottom: 2rem;
   word-spacing: 0.5rem;
 }
