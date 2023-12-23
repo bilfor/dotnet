@@ -11,7 +11,7 @@ html {
   color: var(--tc);
   font-family: 'Nunito', sans-serif;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 3vw;
 }
 
 .whisper {
@@ -31,6 +31,10 @@ td, th {
   padding: 8px;
   word-wrap: break-word;
   max-width: 25vw;
+}
+
+tr {
+  font-size: 3vw;
 }
 
 tr:nth-child(even) {
