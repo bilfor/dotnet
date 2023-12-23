@@ -29,7 +29,8 @@ table {
 td, th {
   text-align: center;
   padding: 8px;
-  word-wrap: break-word:
+  word-wrap: break-word;
+  max-width: 25vw;
 }
 
 tr:nth-child(even) {
