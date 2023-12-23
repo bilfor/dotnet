@@ -10,7 +10,7 @@ html {
   background-color: var(--bgc);
   color: var(--tc);
   font-family: 'Nunito', sans-serif;
-  text-align-last: center;
+  text-align: center;
   font-size: 3vw;
 }
 
@@ -46,7 +46,7 @@ tr:nth-child(odd) {
 }
 
 .container {
-  text-align-last: center;
+  text-align: center;
 }
 
 .shrinkwrap img {
@@ -82,6 +82,8 @@ img {
 
 .photodiv img {
   aspect-ratio: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .photospacer {
