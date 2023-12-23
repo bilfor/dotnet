@@ -32,10 +32,6 @@ td, th {
   word-wrap: break-word:
 }
 
-tr {
-  font-size: 1.5vh;
-}
-
 tr:nth-child(even) {
   background-color: var(--lh);
 }
