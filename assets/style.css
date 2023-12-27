@@ -69,14 +69,14 @@ a:hover {
 
 .photodiv {
   width: 60%;
-  min-width: 80vh;
+  min-width: 50vh;
   max-width: 100%;
   margin: auto;
 }
 
 img {
   aspect-ratio: auto;
-  width: 100%;
+  max-width: 90%;
   height: auto;
   margin-bottom: 3vh;
 }
