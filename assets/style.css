@@ -66,21 +66,29 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/*
+
 .photodiv {
   width: 60%;
   min-width: 80vh;
   max-width: 100%;
   margin: auto;
 }
+
 img {
   aspect-ratio: auto;
   width: 100%;
   height: auto;
   margin-bottom: 3vh;
 }
-*/
 
+.shrinkwrap img {
+  height: auto;
+  width: auto;
+  max-height: 60vh;
+  max-width: 80%;
+}
+
+/*
 img {
   width: 50%;
   min-width: 80vh;
@@ -89,6 +97,7 @@ img {
   aspect-ratio: auto;
   margin-bottom: 3vh;
 }
+*/
 
 ul {
   list-style-type: none; /* Remove bullets */
