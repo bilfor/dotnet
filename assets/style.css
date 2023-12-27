@@ -75,7 +75,7 @@ a:hover {
 
 img {
   aspect-ratio: auto;
-  max-width: 90%;
+  width: 90%;
   height: auto;
   margin-bottom: 3vh;
 }
