@@ -87,6 +87,10 @@ img {
   max-width: 80%;
 }
 
+.photodiv .album {
+  max-width: 50vh;
+}
+
 /*
 img {
   width: 50%;
