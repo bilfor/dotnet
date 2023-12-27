@@ -47,13 +47,7 @@ tr:nth-child(odd) {
 
 .container {
   text-align: center;
-}
-
-.shrinkwrap img {
-  height: auto; 
-  width: auto;
-  max-height: 60vh;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 h1 {
@@ -72,24 +66,28 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-img {
-  height: 300px;
-}
-
+/*
 .photodiv {
-  max-width: 80%;
+  width: 60%;
+  min-width: 80vh;
+  max-width: 100%;
   margin: auto;
 }
-
-.photodiv img {
+img {
   aspect-ratio: auto;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  margin-bottom: 3vh;
 }
+*/
 
-.photospacer {
-  margin-top: 10rem;
+img {
+  width: 50%;
+  min-width: 80vh;
+  max-width: 100%;
+  margin: auto;
+  aspect-ratio: auto;
+  margin-bottom: 3vh;
 }
 
 ul {
@@ -108,13 +106,4 @@ ul {
 
 .navbar a {
   color: var(--tc);
-}
-
-.pin {
-	height: 31px;
-	width: 88px;
-}
-
-.album-info {
-  word-spacing: 2rem;
 }
