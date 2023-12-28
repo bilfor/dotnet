@@ -2,9 +2,9 @@
 
 html {
   --bgc: #7c6354;
-  --tc: #fdfffc;
-  --lc: #f5b82e;
-  --tc1: #5985aa;
+  --tc: #fffded;
+  --lc: #d19c1d;
+  --tc1: #136f63;
   --tc2: #363457;
   background-color: var(--bgc);
   color: var(--tc);
