@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 html {
-  --bgc: #000000;
-  --tc: #FFFFFF;
-  --lc: #818CF8;
-  --lh: #BF5700;
-  --eg: #004c54;
-  --bo: #fb4f14;
+  --bgc: #7c6354;
+  --tc: #fdfffc;
+  --lc: #f5b82e;
+  --tc1: #5985aa;
+  --tc2: #363457;
   background-color: var(--bgc);
   color: var(--tc);
-  font-family: 'Nunito', sans-serif;
+  font-family: Bitstream Charter;
   text-align: center;
-  font-size: 2.5vh;
+  font-size: 2.25vh;
 }
 
 .whisper {
@@ -37,11 +36,11 @@ tr {
 }
 
 tr:nth-child(even) {
-  background-color: var(--lh);
+  background-color: var(--tc1);
 }
 
 tr:nth-child(odd) {
-  background-color: var(--eg);
+  background-color: var(--tc2);
 }
 
 .container {
