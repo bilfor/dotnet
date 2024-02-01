@@ -74,14 +74,22 @@ a:hover {
 
 img {
   aspect-ratio: auto;
-  width: 90%;
+  max-width: 90%;
   height: auto;
+  max-height:90vh;
   margin-bottom: 3vh;
 }
 
 .shrinkwrap img {
   width: 40%;
   min-width: 50vh;
+  max-width: 100%;
+  margin: auto;
+}
+
+.shrinkwrap2 img {
+  width: 30%;
+  min-width: 40vh;
   max-width: 100%;
   margin: auto;
 }
