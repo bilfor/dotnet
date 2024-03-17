@@ -174,9 +174,8 @@ ul {
 }
 
 .post img {
-  max-width: 95%;
+  max-width: 98%;
   display: block;
-  border: 5px solid var(--tc1);
   border-radius: 5px;
 }
   
