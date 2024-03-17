@@ -1,0 +1,37 @@
+<title>willforeman.net</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico">
+<div class="container">
+  <span class="shrinkwrap2">
+    <img src="../assets/burning.gif"></a>
+  </span>
+  <div class="navbar">
+    <a href="/index.html">home</a>
+    <a href="/pages/music.html">music</a>
+    <a href="/pages/photos.html">photos</a>
+    <a href="/pages/links.html">links</a>
+    <a href="/pages/notes.html">notes</a>
+  </div>
+  <div class="post">
+    <h2>please let me touch the mp3s</h2>
+<h5>2024-03-16</h5>
+<p>For when there is no other way to get the mp3 files for an album.</p>
+<p>First, install yt-dlp. Install instructions are on the <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp github</a>. Or, on Arch, just:</p>
+<p><code>sudo pacman -Syu yt-dlp</code></p>
+<p>Navigate wherever you want to put these files. You'll probably want to make a directory to hold them:</p>
+<p><code>mkdir album &amp;&amp; cd album</code></p>
+<p>Then, run this command with your YouTube URL inserted in the marked place. This can handle a full playlist or just one video, but I'm working with a playlist:</p>
+<p><code>yt-dlp --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --output "%(title)s.%(ext)s" --write-thumbnail --convert-thumbnails png 'https://www.youtube.com/playlist?list=OLAK5uy_mhV0gG7uk8ScgI_doUdr-Q8qw3jnn9QmM' &amp;&amp; rm *.png</code></p>
+<p>Now you have all the files you need (music and cover art), and no more. I really tried to find a way to only download the square jpg from the playlist, but couldn't find it. So, we write the thumbnail of each video as a png, the playlist thumbnail as jpg (don't ask me why it doesn't convert), and we delete the pngs. Wasteful, but clean.</p>
+<p>Unfortunately, they're not tagged. I like
+<a href="https://github.com/NickvisionApps/Tagger">Tagger</a>, which is available in the AUR. </p>
+<p><code>yay tagger &amp;&amp; tagger</code></p>
+<p>Tagger's GUI is pretty self explanatory. Select your directory to pull up all the songs, then edit them. Note that you can ctrl+click and shift+click the tracklist on the left to edit multiple files at once. It should look something like this when you're all done.</p>
+<!-- IMAGE 1 -->
+
+<p>You can share your freshly tagged files on <a href="https://www.slsknet.org/">Soulseek</a> to
+save others from having to do the same in the future.
+<a href="https://nicotine-plus.org/">Nicotine+</a> is really great, and much easier to use than SoulseekQt.</p>
+  </div>
+  <p class="whisper">mail@willforeman.net</p>
+</div>

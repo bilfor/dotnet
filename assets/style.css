@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
 
 html {
   --bgc: #7c6354;
@@ -8,7 +11,7 @@ html {
   --tc2: #363457;
   background-color: var(--bgc);
   color: var(--tc);
-  font-family: Bitstream Charter;
+  font-family: 'Frank Ruhl Libre';
   text-align: center;
   font-size: 2.25vh;
 }
@@ -17,6 +20,14 @@ html {
   color: darkgray;
   font-style: italic;
   font-size: 0.8em;
+}
+
+.title {
+  padding-left: 2.25vh;
+}
+
+.date {
+  font-size: 2vh;
 }
 
 table {
@@ -46,6 +57,33 @@ tr:nth-child(odd) {
 .container {
   text-align: center;
   max-width: 100%;
+}
+
+.post {
+  text-align: left;
+  width: 40%;
+  min-width: 50vh;
+  max-width: 100%;
+  margin: auto;
+}
+
+.post h2 {
+  margin-bottom: 0;
+}
+
+.post h5 {
+  margin-top: 1vh;
+}
+
+code {
+    font-family: 'IBM Plex Mono', 'monospace';    
+    font-size: 1.75vh;
+    background-color: var(--tc2); /* Dark gray background */
+    color: var(--tc); /* Light color text for contrast */
+    padding: 0.4em 0.4em; /* Add some padding around the text */
+    border-radius: 3px; /* Rounds the corners */
+    display: inline-block; /* Makes the element inline but able to define padding and dimensions */
+    /* width and height can be set if you want specific dimensions */
 }
 
 h1 {
