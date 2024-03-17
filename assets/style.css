@@ -134,8 +134,8 @@ img {
 .shrinkwrap img {
   border-radius: 5px;
   width: 40%;
-  min-width: 40vh;
-  max-width: 70vh%;
+  min-width: 50vh;
+  max-width: 70%;
   margin: auto;
 }
 
