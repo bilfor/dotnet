@@ -171,3 +171,12 @@ ul {
 .navbar a {
   color: var(--tc);
 }
+
+.post img {
+  max-width: 100%;
+  display: block;
+  border: 5px solid var(--tc1);
+  border-radius: 5px;
+}
+  
+
