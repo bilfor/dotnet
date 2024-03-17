@@ -113,6 +113,7 @@ a:hover {
   width: 60%;
   min-width: 50vh;
   max-width: 100%;
+  max-width: none;
   margin: auto;
 }
 
@@ -173,7 +174,7 @@ ul {
 }
 
 .post img {
-  max-width: 100%;
+  max-width: 95%;
   display: block;
   border: 5px solid var(--tc1);
   border-radius: 5px;
