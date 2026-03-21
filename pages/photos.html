@@ -70,6 +70,24 @@
   }
 
   .lightbox-close:hover { opacity: 1; }
+
+  .lightbox-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: default;
+  }
+
+  .lightbox-caption {
+    color: #fffded;
+    font-family: 'Frank Ruhl Libre', Georgia, serif;
+    font-size: 0.95rem;
+    opacity: 0.7;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
 </style>
 
 <div class="container">
@@ -212,27 +230,60 @@
 <!-- Lightbox overlay -->
 <div class="lightbox" id="lightbox">
   <span class="lightbox-close" id="lightbox-close">&#x2715;</span>
-  <img id="lightbox-img" src="" alt="">
+  <div class="lightbox-inner">
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/exifr@7/dist/lite.umd.js"></script>
 <script>
-  const lightbox = document.getElementById('lightbox');
-  const lbImg    = document.getElementById('lightbox-img');
-  const lbClose  = document.getElementById('lightbox-close');
+  const lightbox  = document.getElementById('lightbox');
+  const lbImg     = document.getElementById('lightbox-img');
+  const lbCaption = document.getElementById('lightbox-caption');
+
+  const MONTHS = ['January','February','March','April','May','June',
+                  'July','August','September','October','November','December'];
+
+  function formatDate(d) {
+    return MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+  }
+
+  function dateFromFilename(src) {
+    const filename = src.split('/').pop();
+    const m = filename.match(/^(\d{4})-(\d{1,2})-(\d{1,2})-/);
+    if (m) {
+      return formatDate(new Date(parseInt(m[1]), parseInt(m[2]) - 1, parseInt(m[3])));
+    }
+    return null;
+  }
+
+  async function getCaption(src) {
+    const fromFilename = dateFromFilename(src);
+    if (fromFilename) return fromFilename;
+    try {
+      const exif = await exifr.parse(src, ['DateTimeOriginal']);
+      if (exif && exif.DateTimeOriginal) {
+        return formatDate(new Date(exif.DateTimeOriginal));
+      }
+    } catch (e) {}
+    return '';
+  }
 
   document.querySelectorAll('.photo-grid img').forEach(img => {
-    img.addEventListener('click', () => {
+    img.addEventListener('click', async () => {
       lbImg.src = img.src;
+      lbCaption.textContent = '';
       lightbox.classList.add('open');
+      const caption = await getCaption(img.src);
+      lbCaption.textContent = caption;
     });
   });
 
-  // Close on background click or X button
   lightbox.addEventListener('click', e => {
-    if (e.target !== lbImg) lightbox.classList.remove('open');
+    if (!e.target.closest('.lightbox-inner')) lightbox.classList.remove('open');
   });
 
-  // Close on Escape
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') lightbox.classList.remove('open');
   });
