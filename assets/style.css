@@ -187,9 +187,6 @@ ul {
 
 .album-block h3 {
   margin: 0 0 1.2vh;
-  font-size: 2.4vh;
-  font-weight: normal;
-  letter-spacing: 0.02em;
 }
 
 .album-block img.album-art {
@@ -199,10 +196,6 @@ ul {
   margin: 0 auto 1.2vh;
   border-radius: 4px;
   display: block;
-}
-
-.album-block .album-info {
-  font-size: 1.9vh;
 }
 
 .album-block .album-info span {
