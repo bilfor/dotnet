@@ -179,5 +179,35 @@ ul {
   display: block;
   border-radius: 5px;
 }
+
+.album-block {
+  margin: 5vh auto 6vh;
+  max-width: 32vh;
+}
+
+.album-block h3 {
+  margin: 0 0 1.2vh;
+  font-size: 2.4vh;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+.album-block img.album-art {
+  width: 100%;
+  max-width: 28vh;
+  height: auto;
+  margin: 0 auto 1.2vh;
+  border-radius: 4px;
+  display: block;
+}
+
+.album-block .album-info {
+  font-size: 1.9vh;
+}
+
+.album-block .album-info span {
+  opacity: 0.5;
+  margin: 0 0.3em;
+}
   
 
