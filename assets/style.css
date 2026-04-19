@@ -170,6 +170,13 @@ ul {
   max-width: 100%;
 }
 
+@media (max-width: 500px) {
+  .navbar {
+    font-size: 2.2vh;
+    word-spacing: 0.15rem;
+  }
+}
+
 .navbar a {
   color: var(--tc);
 }
