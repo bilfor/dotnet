@@ -4,12 +4,12 @@ url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
 
 html {
-  --bgc: #2a2d2e;
-  --tc: #6ab26f;
-  --lc: #e9c46a;
-  --tc1: #1d3557;
-  --tc2: #774936;
-  --fresh: #d0ee68;
+  --bgc: #2e2119;
+  --tc: #f0d9b5;
+  --lc: #e8a85c;
+  --tc1: #6b3e2e;
+  --tc2: #3d5030;
+  --fresh: #c5d27f;
   background-color: var(--bgc);
   color: var(--tc);
   font-family: 'Frank Ruhl Libre';
