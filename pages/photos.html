@@ -89,6 +89,13 @@
     opacity: 0.7;
     text-align: center;
     letter-spacing: 0.03em;
+    line-height: 1.4;
+  }
+
+  .lightbox-caption .credit {
+    font-style: italic;
+    font-size: 0.85em;
+    opacity: 0.75;
   }
 
 </style>
@@ -249,38 +256,51 @@
   const MONTHS = ['January','February','March','April','May','June',
                   'July','August','September','October','November','December'];
 
-  function formatDate(d) {
-    return MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+  function formatMonthYear(d) {
+    return MONTHS[d.getMonth()] + ' ' + d.getFullYear();
   }
 
   function dateFromFilename(src) {
     const filename = src.split('/').pop();
     const m = filename.match(/^(\d{4})-(\d{1,2})-(\d{1,2})-/);
     if (m) {
-      return formatDate(new Date(parseInt(m[1]), parseInt(m[2]) - 1, parseInt(m[3])));
+      return new Date(parseInt(m[1]), parseInt(m[2]) - 1, parseInt(m[3]));
     }
     return null;
   }
 
-  async function getCaption(src) {
+  async function resolveDate(src) {
     const fromFilename = dateFromFilename(src);
     if (fromFilename) return fromFilename;
     try {
       const exif = await exifr.parse(src, ['DateTimeOriginal']);
-      if (exif && exif.DateTimeOriginal) {
-        return formatDate(new Date(exif.DateTimeOriginal));
-      }
+      if (exif && exif.DateTimeOriginal) return new Date(exif.DateTimeOriginal);
     } catch (e) {}
-    return '';
+    return null;
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  async function buildCaption(img) {
+    const place = img.dataset.place;
+    const photographer = img.dataset.photographer;
+    const date = await resolveDate(img.src);
+
+    const lines = [];
+    if (place) lines.push(escapeHtml(place));
+    if (date) lines.push(escapeHtml(formatMonthYear(date)));
+    if (photographer) lines.push('<span class="credit">Photo by ' + escapeHtml(photographer) + '</span>');
+    return lines.join('<br>');
   }
 
   document.querySelectorAll('.photo-grid img').forEach(img => {
     img.addEventListener('click', async () => {
       lbImg.src = img.src;
-      lbCaption.textContent = '';
+      lbCaption.innerHTML = '';
       lightbox.classList.add('open');
-      const caption = await getCaption(img.src);
-      lbCaption.textContent = caption;
+      lbCaption.innerHTML = await buildCaption(img);
     });
   });
 
