@@ -215,7 +215,7 @@ ul {
   margin: 2vh auto;
   padding: 1.2vh 2vh;
   max-width: 42vh;
-  border: 1px dashed var(--lc);
+  border: 1px solid var(--lc);
   border-radius: 4px;
   text-align: left;
   position: relative;
