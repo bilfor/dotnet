@@ -261,9 +261,19 @@ ul {
 .navi-heading {
   font-style: italic;
   font-weight: 700;
+  font-size: 1.9vh;
   color: #fffbd6;
   text-shadow: 0 0 6px rgba(122, 208, 255, 0.8), 0 0 14px rgba(122, 208, 255, 0.5);
   letter-spacing: 0.04em;
+}
+
+.navi-subheading {
+  margin-left: auto;
+  font-size: 1.6vh;
+  color: var(--lc);
+  opacity: 0.75;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.05em;
 }
 
 .navi-updates {
