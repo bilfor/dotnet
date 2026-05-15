@@ -14,7 +14,7 @@ html {
   color: var(--tc);
   font-family: 'Frank Ruhl Libre';
   text-align: center;
-  font-size: clamp(16px, 0.9rem + 0.35vw, 20px);
+  font-size: clamp(17px, 1rem + 0.35vw, 22px);
 }
 
 .datelist {
