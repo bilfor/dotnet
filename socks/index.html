@@ -1,0 +1,82 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>socks</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico">
+<div class="container">
+  <span class="shrinkwrap2">
+    <img src="../assets/burning.gif">
+  </span>
+  <div class="navbar">
+    <a href="/index.html">home</a>
+    <a href="/pages/photos.html">photos</a>
+    <a href="/pages/links.html">links</a>
+    <a href="/pages/notes.html">notes</a>
+    <a href="/feed/">feed</a>
+  </div>
+  <div class="post">
+    <h2>socks vs AI images</h2>
+    <h5>2026-05-26</h5>
+    <h3>TL;DR</h3>
+    <ul>
+      <li><strong>Electricity:</strong> 1 pair of socks &asymp; 100&ndash;1,000 AI images (100&times; electricity-only, 1,000&times; if you count thermal energy)</li>
+      <li><strong>Water (blue, like-for-like):</strong> 1 pair of socks &asymp; ~1,000 AI images</li>
+      <li><strong>Water (full cradle-to-gate, including pasture rainfall):</strong> 1 pair of socks &asymp; hundreds of thousands of AI images</li>
+    </ul>
+
+    <svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto; margin: 3vh auto; display: block;" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Log-scale chart comparing the resource cost of one pair of merino socks to AI images">
+      <text x="350" y="22" text-anchor="middle" fill="#f3e3c2" font-family="'Frank Ruhl Libre', serif" font-size="18" font-weight="bold">1 pair of merino socks &asymp; how many AI images?</text>
+
+      <g stroke="#3d5439" stroke-width="1" opacity="0.45">
+        <line x1="220" y1="50" x2="220" y2="310"/>
+        <line x1="308" y1="50" x2="308" y2="310"/>
+        <line x1="396" y1="50" x2="396" y2="310"/>
+        <line x1="484" y1="50" x2="484" y2="310"/>
+        <line x1="572" y1="50" x2="572" y2="310"/>
+        <line x1="660" y1="50" x2="660" y2="310"/>
+      </g>
+
+      <g fill="#f3e3c2" font-family="'IBM Plex Mono', monospace" font-size="11" text-anchor="middle" opacity="0.7">
+        <text x="220" y="328">10</text>
+        <text x="308" y="328">100</text>
+        <text x="396" y="328">1K</text>
+        <text x="484" y="328">10K</text>
+        <text x="572" y="328">100K</text>
+        <text x="660" y="328">1M</text>
+      </g>
+
+      <text x="215" y="84" text-anchor="end" fill="#f3e3c2" font-family="'Frank Ruhl Libre', serif" font-size="13">electricity (operational)</text>
+      <rect x="220" y="68" width="88" height="30" fill="#e8a55c"/>
+      <text x="316" y="88" fill="#f3e3c2" font-family="'IBM Plex Mono', monospace" font-size="11">~100&times;</text>
+
+      <text x="215" y="139" text-anchor="end" fill="#f3e3c2" font-family="'Frank Ruhl Libre', serif" font-size="13">energy (incl. thermal)</text>
+      <rect x="220" y="123" width="176" height="30" fill="#e8a55c"/>
+      <text x="404" y="143" fill="#f3e3c2" font-family="'IBM Plex Mono', monospace" font-size="11">~1,000&times;</text>
+
+      <text x="215" y="194" text-anchor="end" fill="#f3e3c2" font-family="'Frank Ruhl Libre', serif" font-size="13">water (blue / like-for-like)</text>
+      <rect x="220" y="178" width="176" height="30" fill="#e8a55c"/>
+      <text x="404" y="198" fill="#f3e3c2" font-family="'IBM Plex Mono', monospace" font-size="11">~1,000&times;</text>
+
+      <text x="215" y="249" text-anchor="end" fill="#f3e3c2" font-family="'Frank Ruhl Libre', serif" font-size="13">water (cradle-to-gate)</text>
+      <rect x="220" y="233" width="414" height="30" fill="#e8a55c"/>
+      <text x="642" y="253" fill="#f3e3c2" font-family="'IBM Plex Mono', monospace" font-size="11">~500K&times;</text>
+
+      <text x="440" y="354" text-anchor="middle" fill="#f3e3c2" font-family="'Frank Ruhl Libre', serif" font-size="11" font-style="italic" opacity="0.7">how many AI images equal one pair of socks (log scale)</text>
+    </svg>
+
+    <p>A pair of merino wool socks and an AI-generated image are separated by roughly two to three orders of magnitude in resource use, though the exact ratio depends heavily on what you count. On electricity, the most-cited peer-reviewed study of generative image models (Luccioni et al., 2023) measured an average of ~3 Wh per image across tested diffusion models, while a 70g pair of merino socks requires somewhere around 300&ndash;500 Wh of electricity for spinning, knitting, and finishing &mdash; a ratio of roughly 100&times;. If you include thermal energy from scouring and dyeing (the natural gas and steam that dominate textile processing), the sock's total cradle-to-gate energy climbs to 2&ndash;6 kWh, pushing the ratio closer to 1,000&times;. On water, the gap is wider: research from UC Riverside puts a generated image at ~15&ndash;60 mL of total freshwater (on-site cooling plus the indirect water used to generate the electricity), while a pair of socks consumes roughly 50 liters of directly-withdrawn freshwater for processing and 15,000&ndash;25,000 liters if you include all the rainfall on the pasture the sheep grazed (the standard &ldquo;water footprint&rdquo; methodology). That's a ratio of ~1,000&times; on a blue-water basis and several hundred thousand on a full cradle-to-gate basis. The headline ratios sound dramatic, but the comparison cuts both ways: most of the sock's water is rain that would have fallen anyway, while a meaningful share of data center water is withdrawn from already-stressed aquifers, so the per-liter impact isn't equivalent even when volumes are.</p>
+
+    <h3>Sources</h3>
+    <ul>
+      <li>Luccioni, Jernite &amp; Strubell (2023), &ldquo;Power Hungry Processing: Watts Driving the Cost of AI Deployment?&rdquo; &mdash; arXiv:2311.16863</li>
+      <li>Li, Yang, Islam &amp; Ren (2023), &ldquo;Making AI Less Thirsty: Uncovering and Addressing the Secret Water Footprint of AI Models&rdquo; &mdash; arXiv:2304.03271</li>
+      <li>Mekonnen &amp; Hoekstra (2012), &ldquo;A Global Assessment of the Water Footprint of Farm Animal Products,&rdquo; Ecosystems 15:401&ndash;415 &mdash; Water Footprint Network</li>
+      <li>Wiedemann et al. (2020), &ldquo;Environmental impacts associated with the production, use, and end-of-life of a woollen garment,&rdquo; International Journal of LCA</li>
+      <li>IEEE Spectrum (Sept 2025), &ldquo;The Real Story on AI Water Usage at Data Centers&rdquo;</li>
+      <li>MIT Technology Review (May 2025), &ldquo;We did the math on AI's energy footprint&rdquo;</li>
+    </ul>
+
+    <p><em>Caveat: the AI numbers are averages across model families and will keep dropping as hardware and models improve; the sock numbers are also averages across very different supply chains (Australian extensive grazing looks nothing like Chinese intensive production). Treat as order-of-magnitude.</em></p>
+  </div>
+  <p class="whisper">mail@willforeman.net</p>
+</div>
