@@ -233,8 +233,9 @@ ul {
   font-style: italic;
   font-weight: 600;
   font-size: 0.7rem;
-  color: var(--tc2);
+  color: var(--tc);
   letter-spacing: 0.03em;
+  opacity: 0.75;
 }
 
 .navi-subheading {
