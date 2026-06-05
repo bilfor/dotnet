@@ -15,7 +15,7 @@
     <a href="/feed/">feed</a>
   </div>
   <span class="shrinkwrap">
-    <img src="./imgs/homepage/2022-05-27-will.JPG">
+    <img id="homepage-pic" src="./imgs/homepage/2022-05-27-will.JPG" style="cursor: pointer;">
   </span>
   <p>last updated 2026-06-05</p>
   <div class="navi-box">
@@ -32,3 +32,32 @@
   <p>welcome to my site :-)</p>
   <a href="mailto:mail@willforeman.net">mail@willforeman.net</a>
 </div>
+<script>
+(function() {
+  const hpImg = document.getElementById('homepage-pic');
+  if (!hpImg) return;
+  let photos = [];
+  let cursor = 0;
+
+  fetch('/pages/photos.html')
+    .then(r => r.text())
+    .then(html => {
+      const matches = html.match(/src="\.\.\/imgs\/thumbs\/[^"]+\.(jpg|jpeg|png|webp|JPG)"/gi) || [];
+      photos = matches
+        .map(s => s.slice(6, -1))                  // strip src=" and trailing "
+        .map(p => p.replace(/^\.\.\//, '/'))       // ../imgs/... -> /imgs/...
+        .map(p => p.replace('/thumbs/', '/'));     // thumb -> full
+      // Fisher-Yates shuffle
+      for (let i = photos.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [photos[i], photos[j]] = [photos[j], photos[i]];
+      }
+    });
+
+  hpImg.addEventListener('click', () => {
+    if (!photos.length) return;
+    hpImg.src = photos[cursor];
+    cursor = (cursor + 1) % photos.length;
+  });
+})();
+</script>
