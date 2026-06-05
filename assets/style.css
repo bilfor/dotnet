@@ -232,8 +232,8 @@ ul {
 .navi-heading {
   font-style: italic;
   font-weight: 600;
-  font-size: 0.85rem;
-  color: var(--lc);
+  font-size: 0.7rem;
+  color: var(--tc2);
   letter-spacing: 0.03em;
 }
 
