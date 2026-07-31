@@ -42,7 +42,7 @@
   <span class="shrinkwrap">
     <img id="homepage-pic" src="./imgs/homepage/2022-05-27-will.JPG" alt="Will Foreman" style="cursor: pointer;">
   </span>
-  <p>last updated 2026-06-05</p>
+  <p>last updated 2026-07-31</p>
   <div class="navi-box">
     <div class="navi-header">
       <span class="navi-heading">hey! listen!</span>
@@ -61,8 +61,10 @@
 (function() {
   const hpImg = document.getElementById('homepage-pic');
   if (!hpImg) return;
+  const SECOND = '/imgs/homepage/goodnight-comic.jpg';  // always the first click
   let photos = [];
   let cursor = 0;
+  let shownSecond = false;
 
   fetch('/pages/photos.html')
     .then(r => r.text())
@@ -80,6 +82,11 @@
     });
 
   hpImg.addEventListener('click', () => {
+    if (!shownSecond) {
+      shownSecond = true;
+      hpImg.src = SECOND;
+      return;
+    }
     if (!photos.length) return;
     hpImg.src = photos[cursor];
     cursor = (cursor + 1) % photos.length;
